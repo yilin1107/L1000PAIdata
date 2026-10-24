@@ -1,0 +1,9 @@
+* text=auto
+*.R text eol=lf
+*.Rmd text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+*.py text eol=lf
+*.txt binary
+*.gmt binary
+*.gz binary

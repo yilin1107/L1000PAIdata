@@ -1,0 +1,25 @@
+{
+  "title": "L1000PAIdata: Signature Libraries for L1000PAI",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Chiu, Yilin"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "L1000",
+    "LINCS",
+    "Enrichr",
+    "gene set library",
+    "R package"
+  ],
+  "description": "R package that downloads the L1000 signature libraries used by L1000PAI from their public Enrichr source, converts them to the L1000PAI format and verifies their content against the reference release used for the L1000PAI analyses. It contains no signature data.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/yilin1107/L1000PAI",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

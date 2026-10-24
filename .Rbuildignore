@@ -2,3 +2,15 @@
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^README\.Rmd$
+^\.github$
+^\.gitattributes$
+^\.gitignore$
+^\.Rhistory$
+^DATA_GOVERNANCE\.md$
+^.*\.Rcheck$
+^.*\.tar\.gz$
+^Rplots.*\.pdf$
+^_local$
+^inst/extdata/.*\.(txt|gmt)$
+^\.zenodo\.json$
+^data-raw$

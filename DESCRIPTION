@@ -1,13 +1,30 @@
 Package: L1000PAIdata
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Signature Libraries for L1000PAI
+Version: 1.0.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Yilin", "Chiu", , "yilin1107@mail.ndmutsgh.edu.tw", role = c("aut", "cre"))
+Description: Downloads, converts and verifies the L1000 perturbation signature
+    libraries used by the 'L1000PAI' package. The libraries are fetched from
+    their public source (Enrichr gene-set libraries built from LINCS L1000
+    data), converted deterministically to the 'L1000PAI' file format, and
+    accepted only when their content fingerprint matches the reference
+    release used for the L1000PAI analyses. Verified files are kept in a
+    per-user cache. The package distributes no signature data.
 License: MIT + file LICENSE
+URL: https://github.com/yilin1107/L1000PAIdata
+BugReports: https://github.com/yilin1107/L1000PAIdata/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
-Suggests: 
-    testthat (>= 3.0.0)
+Depends:
+    R (>= 4.3)
+Imports:
+    curl (>= 6.0.0),
+    digest,
+    tools,
+    utils
+Suggests:
+    testthat (>= 3.2.0)
 Config/testthat/edition: 3
+biocViews: ExperimentData, GeneSetEnrichment, Transcriptomics
+NeedsCompilation: no

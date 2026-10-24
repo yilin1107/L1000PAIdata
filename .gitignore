@@ -4,3 +4,22 @@
 .httr-oauth
 .DS_Store
 .quarto
+
+# Package build artifacts
+/*.Rcheck/
+/*.tar.gz
+/Rplots*.pdf
+
+# Signature-library files are never committed: the package downloads and
+# verifies them (download_l1000pai_data()). Local reference copies may sit in
+# inst/extdata for register_l1000pai_data_file().
+/inst/extdata/*
+!/inst/extdata/library_manifest.csv
+!/inst/extdata/library_sources.csv
+
+# Local, unpublished files
+/_local/
+
+# Python runtime files
+__pycache__/
+*.py[cod]
